@@ -1,2 +1,1 @@
-docker run --name postgresql -p 5432:5432 -v postgres-data:/var/lib/postgresql/data -d postgres
-
+docker run --name postgresql -p 5432:5432 -v postgres-data:/var/lib/postgresql/data -d brfsoftware/workoutapp:postgres
