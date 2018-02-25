@@ -21,8 +21,9 @@ CREATE TABLE train (
 	trainrepetitions int4 NOT NULL,
 	trainequipmentid int4 NOT NULL,
 	trainuserid int4 NOT NULL
-)
-create role admin nologin;
+);
+
+CREATE ROLE admin NOLOGIN;
 grant admin to postgres;
 
 grant usage on schema public to admin;
