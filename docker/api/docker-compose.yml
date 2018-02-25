@@ -9,7 +9,7 @@ services:
     environment:
       PGRST_DB_URI: postgres://postgres:temp12345@postgres:5432/postgres
       PGRST_DB_SCHEMA: public
-      PGRST_DB_ANON_ROLE: postgres
+      PGRST_DB_ANON_ROLE: anon
 
   postgres:
     image: brfsoftware/workoutapp:postgres
