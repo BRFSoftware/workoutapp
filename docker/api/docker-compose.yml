@@ -1,0 +1,21 @@
+version: '3'
+services:
+  server:
+    image: postgrest/postgrest
+    ports:
+      - "3000:3000"
+    links:
+      - postgres:postgres
+    environment:
+      PGRST_DB_URI: postgres://postgres:temp12345@postgres:5432/postgres
+      PGRST_DB_SCHEMA: public
+      PGRST_DB_ANON_ROLE: postgres
+
+  postgres:
+    image: brfsoftware/workoutapp:postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+volumes:
+    postgres-data: {}

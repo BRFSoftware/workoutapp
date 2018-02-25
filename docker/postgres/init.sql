@@ -22,3 +22,18 @@ CREATE TABLE train (
 	trainequipmentid int4 NOT NULL,
 	trainuserid int4 NOT NULL
 )
+create role admin nologin;
+grant admin to postgres;
+
+grant usage on schema public to admin;
+grant all on public.users to admin;
+grant usage, select on sequence public.users_id_seq to admin;
+
+create role anon nologin;
+grant anon to postgres;
+grant usage on schema public to anon;
+
+grant select on public.users to anon;
+grant select on public.equipment to anon;
+grant select on public.exercise to anon;
+grant select on public.train to anon;
