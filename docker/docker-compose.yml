@@ -12,7 +12,7 @@ services:
     environment:
       PGRST_DB_URI: postgres://postgres:temp12345@postgres:5432/postgres
       PGRST_DB_SCHEMA: public
-      PGRST_DB_ANON_ROLE: postgres
+      PGRST_DB_ANON_ROLE: anon
       JWT_SECRET: vm78b3OG1kWw1HFd6o0zbkrYMuA7DI8h%
 
   postgres:
