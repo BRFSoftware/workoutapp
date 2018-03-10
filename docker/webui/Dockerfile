@@ -7,10 +7,9 @@ RUN pip install -r /tmp/requirements.txt
 
 RUN mkdir /app
 
-
 COPY bottle /app
 WORKDIR /app
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD [ "python", "./routes.py" ]
