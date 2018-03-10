@@ -24,8 +24,8 @@ def equipment():
 def index():
     return template('index')
 
+run(host='0.0.0.0', port=8080)
 
-run()
 
 
 
