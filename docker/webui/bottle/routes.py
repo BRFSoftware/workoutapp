@@ -11,7 +11,7 @@ def equipment():
         'Content-Type': 'application/json',
     }
 
-    response = requests.get('http://127.0.0.1:3000/equipment', headers=headers)
+    response = requests.get('http://api:3000/equipment', headers=headers)
 
     data = json.loads(response.text)
 
