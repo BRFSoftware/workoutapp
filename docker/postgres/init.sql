@@ -46,3 +46,4 @@ GRANT SELECT ON public.exercise TO anon;
 GRANT SELECT ON public.train TO anon;
 
 GRANT Insert, Select ON TABLE "public"."equipment" TO "rw-equipment";
+GRANT Usage, Select ON TABLE "public"."equipment_equipmentid_seq" TO "rw-equipment";
