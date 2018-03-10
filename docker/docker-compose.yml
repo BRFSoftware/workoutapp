@@ -13,7 +13,7 @@ services:
       PGRST_DB_URI: postgres://postgres:temp12345@postgres:5432/postgres
       PGRST_DB_SCHEMA: public
       PGRST_DB_ANON_ROLE: anon
-      JWT_SECRET: vm78b3OG1kWw1HFd6o0zbkrYMuA7DI8h%
+      JWT_SECRET: M8HFsixMWuEO9av4gTEKxo0EeF8gJMqm
 
   postgres:
     image: brfsoftware/workoutapp:postgres
