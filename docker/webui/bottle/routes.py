@@ -5,6 +5,7 @@ import os, sys
 
 @route('/equipment', method='GET')
 @route('equipment', method='GET')
+
 def equipment():
     token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoicnctZXF1aXBtZW50In0.yR78_tBuW1Da6wVG9rIvyzhlfbR1xtz7O5oXa1z6Xa4"
     headers = {
@@ -37,12 +38,6 @@ def send_css(filename):
 @app.route('/static/<filename:re:.*\.js>')
 def send_js(filename):
     return static_file(filename, root=dirname+'/static/asset/js')
-
-@app.route('/')
-def index():
-    data = {"developer_name":"Ahmedur Rahman Shovon",
-            "developer_organization":"Datamate Web Solutions"}
-    return template('index', data = data)
 
 run(host='0.0.0.0', port=8080)
 
