@@ -39,8 +39,28 @@
 	<div class="container">
 		<div class="row">
 			<div class="jumbotron">
-			<h2>Welcome from {{data["developer_name"]}}</h2>
-				<a href="http://localhost:8080/equipment"> Equipment </a>
+			<h1>Users List</h1>
+<table border="1">
+    <tr>
+        <td>User First Name</td>
+        <td>User Last Type</td>
+    </tr>
+% for user in data:
+    <tr>
+        <td>
+            <input type="text" name="userFirstName" value="{{user['firstname']}}">
+        </td>
+        <td>
+            <input type="text" name="userLastName" value="{{user['lastname']}}">
+        </td>
+    </tr>
+% end
+</table>
+
+<p>
+    <a href="/">Main Menu</a>
+</p>
+</body>
 			</div>
 		</div>
 		<!--./row-->
