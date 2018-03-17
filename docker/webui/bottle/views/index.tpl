@@ -9,8 +9,8 @@
 	<link rel="icon" href="/static/favicon.ico">
 	<title>MEU PIRU</title>
 	<link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
-	<script type="text/javascript" src="/static/jquery.min.js"></script>
-	<script type="text/javascript" src="/static/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/static/asset/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/asset/bootstrap.min.js"></script>
 </head>
 <body>
 	<!-- Static navbar -->
