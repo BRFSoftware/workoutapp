@@ -39,12 +39,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="jumbotron">
-				<p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+			<h2>Welcome from {{data["developer_name"]}}</h2>
+				<a href="http://localhost:8080/equipment"> Equipment </a>
 			</div>
 		</div>
 		<!--./row-->
 		<div class="row">
 			<hr>
+			<footer>
+				<p>&copy; 2017 {{data["developer_organization"]}}.</p>
+			</footer>
 		</div>
 	</div>
 	<!-- /container -->
