@@ -6,11 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Bottle web project template">
 	<meta name="author" content="datamate">
-	<link rel="icon" href="../static/asset/favicon.ico">
 	<title>MEU PIRU</title>
-	<link rel="stylesheet" type="text/css" href="../static/asset/bootstrap.min.css">
-	<script type="text/javascript" src="../static/asset/jquery.min.js"></script>
-	<script type="text/javascript" src="../static/asset/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/asset/css/bootstrap.min.css">
+	<script type="text/javascript" src="../static/asset/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/asset/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<!-- Static navbar -->
