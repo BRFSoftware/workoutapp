@@ -19,7 +19,7 @@ CREATE TABLE exercise (
     exerciseId SERIAL PRIMARY KEY NOT NULL,
     exerciseName VARCHAR(254) NOT NULL,
     exerciseType VARCHAR(254) NOT NULL,
-    equipmentId VARCHAR(254) NOT NULL foreign key (equipmentId) REFERENCES equipment (equipmentId)
+    equipmentId SERIAL NOT NULL CONSTRAINT fk_exercise_equipment foreign key (equipmentId) REFERENCES equipment (equipmentId)
 );
 CREATE TABLE train (
     trainid SERIAL PRIMARY KEY NOT NULL ,
