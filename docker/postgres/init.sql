@@ -26,8 +26,10 @@ CREATE TABLE train (
     traintype varchar(254) NOT NULL,
     trainexercisetype varchar(254) NOT NULL,
     trainrepetitions int4 NOT NULL,
-    trainequipmentid SERIAL NOT NULL CONSTRAINT fk_train_equipment foreign key (trainequipmentid) REFERENCES equipment (equipmentId),
-    trainuserid SERIAL NOT NULL CONSTRAINT fk_train_user foreign key (trainuserid) REFERENCES user (Id)
+    trainequipmentid SERIAL NOT NULL,
+    CONSTRAINT fk_train_equipment foreign key (trainequipmentid) REFERENCES equipment (equipmentId),
+    trainuserid SERIAL NOT NULL,
+    CONSTRAINT fk_train_user foreign key (trainuserid) REFERENCES Users (Id)
 );
 
 GRANT USAGE ON SCHEMA public TO admin;
