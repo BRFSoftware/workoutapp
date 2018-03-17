@@ -7,7 +7,7 @@
 	<meta name="description" content="Bottle web project template">
 	<meta name="author" content="datamate">
 	<link rel="icon" href="/static/favicon.ico">
-	<title>Project</title>
+	<title>Exercises</title>
 	<link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
 	<script type="text/javascript" src="/static/jquery.min.js"></script>
 	<script type="text/javascript" src="/static/bootstrap.min.js"></script>
@@ -39,19 +39,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="jumbotron">
-			<h1>Users List</h1>
+			<h1>Exercises List</h1>
 <table border="1">
     <tr>
-        <td>User First Name</td>
-        <td>User Last Type</td>
+        <td>Exercise Name</td>
+        <td>Exercise Type</td>
     </tr>
-% for user in data:
+% for exercise in data:
     <tr>
         <td>
-            <input type="text" name="userFirstName" value="{{user}}">
+            <input type="text" name="exercisetype" value="{{exercise}}">
         </td>
         <td>
-            <input type="text" name="userLastName" value="{{user}}">
+            <input type="text" name="exercisename" value="{{exercise}}">
         </td>
     </tr>
 % end
@@ -66,9 +66,6 @@
 		<!--./row-->
 		<div class="row">
 			<hr>
-			<footer>
-				<p>&copy; 2017 {{data["developer_organization"]}}.</p>
-			</footer>
 		</div>
 	</div>
 	<!-- /container -->

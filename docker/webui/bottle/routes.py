@@ -55,7 +55,28 @@ def users():
 
     data = json.loads(response.text)
 
+    print(data)
+
 
     return template('users', data=data)
+
+@app.route('/exercises', method='GET')
+@app.route('exercises', method='GET')
+def users():
+    token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoicnctZXF1aXBtZW50In0.yR78_tBuW1Da6wVG9rIvyzhlfbR1xtz7O5oXa1z6Xa4"
+    headers = {
+        'Authorization': 'Bearer ' + token,
+        'Content-Type': 'application/json',
+    }
+
+    response = requests.get('http://api:3000/exercises', headers=headers)
+
+    data = json.loads(response.text)
+
+    print(data)
+
+
+    return template('exercises', data=data)
+
 
 run(app, host='0.0.0.0', port = 8080)
