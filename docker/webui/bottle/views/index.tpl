@@ -39,7 +39,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="jumbotron">
-			<h2>Welcome from {{data["developer_name"]}}</h2>
+			<h2>Welcome TO THE TOP TOP APP</h2>
 				<a href="http://localhost:8080/equipment"> Equipment </a>
 				<a href="http://localhost:8080/users"> Users </a>
 				<a href="http://localhost:8080/exercise"> Exercises </a>
@@ -49,7 +49,7 @@
 		<div class="row">
 			<hr>
 			<footer>
-				<p>&copy; 2017 {{data["developer_organization"]}}.</p>
+			    <p>TOPPPEN </p>
 			</footer>
 		</div>
 	</div>

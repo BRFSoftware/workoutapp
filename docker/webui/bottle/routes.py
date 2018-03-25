@@ -20,10 +20,9 @@ def send_js(filename):
     return static_file(filename, root=dirname+'/static/asset/js')
 
 
+@app.route('')
 @app.route('/')
 def index():
-    data = {"developer_name":"Ahmedur Rahman Shovon",
-			"developer_organization":"Datamate Web Solutions"}
     return template('index', data = data)
 
 @app.route('/equipment', method='GET')
