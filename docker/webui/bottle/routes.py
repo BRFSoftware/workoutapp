@@ -62,7 +62,7 @@ def users():
 
 @app.route('/exercise', method='GET')
 @app.route('exercise', method='GET')
-def users():
+def exercises():
     headers = {
         'Authorization': 'Bearer ' + token,
         'Content-Type': 'application/json',

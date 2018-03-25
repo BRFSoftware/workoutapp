@@ -41,6 +41,8 @@
 			<div class="jumbotron">
 			<h2>Welcome from {{data["developer_name"]}}</h2>
 				<a href="http://localhost:8080/equipment"> Equipment </a>
+				<a href="http://localhost:8080/users"> Users </a>
+				<a href="http://localhost:8080/exercise"> Exercises </a>
 			</div>
 		</div>
 		<!--./row-->
