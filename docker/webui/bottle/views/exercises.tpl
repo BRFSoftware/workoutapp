@@ -48,10 +48,10 @@
 % for exercise in data:
     <tr>
         <td>
-            <input type="text" name="exercisetype" value="{{exercise}}">
+            <input type="text" name="exercisetype" value="{{exercise['exercisetype'}}">
         </td>
         <td>
-            <input type="text" name="exercisename" value="{{exercise}}">
+            <input type="text" name="exercisename" value="{{exercise['exercisename'}}">
         </td>
     </tr>
 % end
