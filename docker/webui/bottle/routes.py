@@ -23,7 +23,7 @@ def send_js(filename):
 @app.route('')
 @app.route('/')
 def index():
-    return template('index', data = data)
+    return template('index')
 
 @app.route('/equipment', method='GET')
 @app.route('equipment', method='GET')
