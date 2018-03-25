@@ -66,9 +66,6 @@
 		<!--./row-->
 		<div class="row">
 			<hr>
-			<footer>
-				<p>&copy; 2017 {{data["developer_organization"]}}.</p>
-			</footer>
 		</div>
 	</div>
 	<!-- /container -->
