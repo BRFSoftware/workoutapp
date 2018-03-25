@@ -1,8 +1,6 @@
 CREATE role admin nologin;
 GRANT admin TO postgres;
 
-CREATE role anon nologin;
-
 CREATE ROLE "rw-equipment" LOGIN;
 
 CREATE TABLE users (

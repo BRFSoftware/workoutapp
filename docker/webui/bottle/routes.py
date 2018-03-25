@@ -7,6 +7,8 @@ dirname = os.path.dirname(sys.argv[0])
 app = Bottle()
 debug(True)
 
+token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4ifQ.mA8R29LMgur9b_T8V6LJvFX5rHxwg3iGqhEW6M4lx2g"
+
 
 @app.route('/static/<filename:re:.*\.css>')
 def send_css(filename):
@@ -27,7 +29,6 @@ def index():
 @app.route('/equipment', method='GET')
 @app.route('equipment', method='GET')
 def equipment():
-    token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoicnctZXF1aXBtZW50In0.yR78_tBuW1Da6wVG9rIvyzhlfbR1xtz7O5oXa1z6Xa4"
     headers = {
         'Authorization': 'Bearer ' + token,
         'Content-Type': 'application/json',
@@ -45,7 +46,6 @@ def equipment():
 @app.route('/users', method='GET')
 @app.route('users', method='GET')
 def users():
-    token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoicnctZXF1aXBtZW50In0.yR78_tBuW1Da6wVG9rIvyzhlfbR1xtz7O5oXa1z6Xa4"
     headers = {
         'Authorization': 'Bearer ' + token,
         'Content-Type': 'application/json',
@@ -60,16 +60,15 @@ def users():
 
     return template('users', data=data)
 
-@app.route('/exercises', method='GET')
-@app.route('exercises', method='GET')
+@app.route('/exercise', method='GET')
+@app.route('exercise', method='GET')
 def users():
-    token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoicnctZXF1aXBtZW50In0.yR78_tBuW1Da6wVG9rIvyzhlfbR1xtz7O5oXa1z6Xa4"
     headers = {
         'Authorization': 'Bearer ' + token,
         'Content-Type': 'application/json',
     }
 
-    response = requests.get('http://api:3000/exercises', headers=headers)
+    response = requests.get('http://api:3000/exercise', headers=headers)
 
     data = json.loads(response.text)
 
